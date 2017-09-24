@@ -1,0 +1,24 @@
+{
+  "name": "weighted-face-game",
+  "version": "0.0.1",
+  "description": "Weighted face game",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marek Miettinen",
+  "license": "ISC",
+  "devDependencies": {
+    "babelify": "~6.0.2",
+    "browserify": "~9.0.7",
+    "gulp": "~3.8.11",
+    "gulp-babel": "~5.1.0",
+    "lodash": "~4.17.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "vinyl-source-stream": "~1.1.0"
+  },
+  "dependencies": {
+    "express": "~4.12.3"
+  }
+}
