@@ -1,5 +1,5 @@
 import React from 'react';
-const {div, span, form, input} = React.DOM;
+const {div, span, form, input, img} = React.DOM;
 import _ from 'lodash';
 
 import WeightDistributionChart from './WeightDistributionChart'
@@ -30,13 +30,13 @@ const FaceGame = React.createClass({
     return div({id: 'face-game'},[
       div({className: 'persons'}, [
         div({className: 'person'}, [
-          div({style: {backgroundImage: `url(${this.props.faceUrlFromId(this.state.targetPerson.uid)})`}, className: 'face'}),
+          img({src: this.props.faceUrlFromId(this.state.targetPerson.uid), className: 'face'}),
           form({className: 'name', onSubmit: this.onSubmit}, [
             input({key: 'nameGuess', className: 'nameGuess', ref: 'nameGuess'})
           ])
         ]),
         div({className: ['person', this.state.previousPerson && this.state.previousPerson.correct ? ' guess-correct' : ' guess-wrong'].join(' ')}, this.state.previousPerson ? [
-          div({style: {backgroundImage: `url(${this.props.faceUrlFromId(this.state.previousPerson.uid)})`}, className: 'face'}),
+          img({src: this.props.faceUrlFromId(this.state.previousPerson.uid), className: 'face'}),
           span({className: 'name'}, this.state.previousPerson.name)
         ] : null)
       ]),

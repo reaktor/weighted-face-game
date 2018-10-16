@@ -17,7 +17,7 @@ export default {
         });
     },
     faceUrlFromId: (id) => {
-        const facePath = 'https://example.com/path/to/faces';
+        const facePath = 'https://cdn.rex.reaktor.cloud/people/400x500';
         return `${facePath}/${id}.jpg`;
     }
 }
