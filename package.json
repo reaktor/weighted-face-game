@@ -11,16 +11,15 @@
   "author": "Marek Miettinen",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.4",
-    "lodash": "^4.17.11",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "vinyl-source-stream": "^2.0.0",
-    "babelify": "^10.0.0",
-    "browserify": "^16.2.3",
-    "gulp": "^4.0.0",
-    "gulp-babel": "^8.0.0",
-    "@babel/core": "^7.1.2"
+    "express": "~4.12.3",
+    "babelify": "~6.0.2",
+    "browserify": "~9.0.7",
+    "gulp": "~3.8.11",
+    "gulp-babel": "~5.1.0",
+    "lodash": "~4.17.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "vinyl-source-stream": "~1.1.0"
   },
   "engines": {
     "node": "8.x"

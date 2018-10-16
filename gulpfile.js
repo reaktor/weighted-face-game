@@ -16,8 +16,8 @@ gulp.task('default', function() {
     .transform(babelify)
     .bundle()
     .pipe(source('main.js'))
-    .pipe(gulp.dest('./public'));
+    .pipe(gulp.dest('public'));
 
     gulp.src('src/**/*')
-    .pipe(gulp.dest('./public'));
+    .pipe(gulp.dest('public'));
 });
